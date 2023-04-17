@@ -10,14 +10,12 @@ stopBtn.disabled = true;
 
 function onStart() {
   intervalId = setInterval(changeBkg, 1000);
-  isActive = true;
   startBtn.disabled = true;
   stopBtn.disabled = false;
 }
 
 function onStop() {
   clearInterval(intervalId);
-  isActive = false;
   startBtn.disabled = false;
   stopBtn.disabled = true;
 }
